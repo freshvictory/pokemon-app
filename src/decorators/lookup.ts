@@ -10,7 +10,7 @@ import { Api } from '../api';
 export default class LookupDecorator extends Vue {
     @Prop() type!: string
 
-    private api = new Api('http://localhost:4567');
+    private api = new Api('https://pokemon-type-api.herokuapp.com');
 
     private autocompleteResults: Type[] = [];
     

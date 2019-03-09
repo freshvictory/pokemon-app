@@ -29,7 +29,8 @@ export default class LookupDecorator extends Vue {
     }
 
     async search(): Promise<void> {
-        let type = await this.api.getType(this.type);
+        let searchTerm = this.type.toLowerCase().trim();
+        let type = await this.api.getType(searchTerm);
 
         this.searchResults = type ? [type] : [];
     }

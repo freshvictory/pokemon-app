@@ -30,7 +30,7 @@
 <script lang="ts">
 import { Vue, Component, Prop } from "vue-property-decorator";
 import { TypeRelationships } from '../models/type'
-import TypeListComponent from '../components/type-list.vue'
+import TypeListComponent from '../components/TypeList.vue'
 
 @Component({
     components: { TypeListComponent }

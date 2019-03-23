@@ -1,4 +1,4 @@
-import { Type } from "./models/type";
+import { Type } from './models/type';
 
 export class Api {
   private readonly url: string;
@@ -8,7 +8,7 @@ export class Api {
   }
 
   public async getType(type: string): Promise<Type | null> {
-    let response = await fetch(this.url + `/type/${type}`);
+    const response = await fetch(this.url + `/type/${type}`);
 
     if (response.ok) {
       return await response.json();

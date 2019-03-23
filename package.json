@@ -1,24 +1,34 @@
 {
-  "name": "app",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.ts",
+  "name": "pokemon-app",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "build": "webpack",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "test:unit": "vue-cli-service test:unit"
   },
-  "author": "",
-  "license": "ISC",
+  "dependencies": {
+    "register-service-worker": "^1.6.2",
+    "vue": "^2.6.6",
+    "vue-class-component": "^6.0.0",
+    "vue-property-decorator": "^7.0.0",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1"
+  },
   "devDependencies": {
-    "css-loader": "^2.1.0",
-    "ts-loader": "^5.3.3",
-    "typescript": "^3.2.4",
-    "vue": "^2.5.22",
-    "vue-class-component": "^6.3.2",
-    "vue-loader": "^15.5.1",
-    "vue-property-decorator": "^7.3.0",
-    "vue-template-compiler": "^2.5.22",
-    "webpack": "^4.28.4",
-    "webpack-cli": "^3.2.1"
+    "@types/chai": "^4.1.0",
+    "@types/mocha": "^5.2.4",
+    "@vue/cli-plugin-babel": "^3.5.0",
+    "@vue/cli-plugin-pwa": "^3.5.0",
+    "@vue/cli-plugin-typescript": "^3.5.0",
+    "@vue/cli-plugin-unit-mocha": "^3.5.0",
+    "@vue/cli-service": "^3.5.0",
+    "@vue/test-utils": "1.0.0-beta.29",
+    "chai": "^4.1.2",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.1.0",
+    "typescript": "^3.2.1",
+    "vue-template-compiler": "^2.5.21"
   }
 }

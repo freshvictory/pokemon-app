@@ -4,12 +4,12 @@ export class Type {
   constructor(
     public type: string,
     public name: string,
-    public shortName: string
+    public shortName: string,
   ) { }
 }
 
 export class TypeRelationships {
-  public effectiveAgainst: Type[] =[];
+  public effectiveAgainst: Type[] = [];
 
   public weakAgainst: Type[] = [];
 

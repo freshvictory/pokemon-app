@@ -19,7 +19,7 @@
 
 <script lang="ts">
 import { Vue, Component, Prop } from 'vue-property-decorator';
-import TypeRelationshipsComponent from '../components/type-relationships.vue'
+import TypeRelationshipsComponent from '../components/TypeRelationships.vue'
 import { Api } from '../api';
 import { Type } from '../models/type';
 
